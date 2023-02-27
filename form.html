@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+<body>
+    <h1>FORM OTORISASI</h1>
+    <form action="http://localhost:8000/api/login" name="login" method="post">
+        <input type="text" name="username" placeholder="Masukkan username..." maxlength="8" value="test">
+        <input type="password" password="password" placeholder="Masukkan password...">
+    </form>
+    <h1>FORM INPUT</h1>
+    <form action="http://localhost:8000/api/form" name="form_daftar">
+        <h3>Type text:</h3>
+        <input type="text" name="input1" value="readonly" readonly>Readonly <br>
+        <input type="text" name="input2" value="disabled" readonly>Disabled
+        <h3>Type file:</h3>
+        <label for="">Pilih Gambar:</label>
+        <input type="file" name="gambar" placeholder="Pilih gambar...">
+        <h3>Type radio:</h3>
+        <label for="">Pilih Gender:</label><br>
+        <input type="radio" name="gender" value="male">Male<br>
+        <input type="radio" name="gender" value="female">Female<br>
+        <h3>Type checkbox:</h3>
+        <label for="">Pilih Hobi (bisa lebih dari 1):</label><br>
+        <input type="checkbox" name="hobi1" value="ngoding">Ngoding<br>
+        <input type="checkbox" name="hobi2" value="baca">Baca<br>
+        <h3>Type select:</h3>
+        <select name="select" id="">
+            <option value="male">Laki-laki</option>
+            <option value="female">Perempuan</option>
+        </select>
+        <h3>Type submit:</h3>
+        <button type="submit">Submit</button>
+        <h3>Type button (bisa jadi submit):</h3>
+        <input type="button" value="Submit">        
+    </form>
+</body>
+</html>
